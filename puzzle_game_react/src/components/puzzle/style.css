@@ -1,0 +1,130 @@
+.tile1 {
+    background-position: left top;
+}
+
+.tile1::before {
+    content: "1";
+    display: flex;
+    justify-content: space-around;
+}
+
+.tile2 {
+    background-position: center top;
+}
+
+.tile2::before {
+    content: "2";
+    display: flex;
+    justify-content: space-around;
+}
+
+.tile3 {
+    background-position: right top;
+}
+
+.tile3::before {
+    content: "3";
+    display: flex;
+    justify-content: space-around;
+}
+
+.tile4 {
+    background-position: left center;
+}
+
+.tile4::before {
+    content: "4";
+    display: flex;
+    justify-content: space-around;
+}
+
+.tile5 {
+    background-position: center center;
+}
+
+.tile5::before {
+    content: "5";
+    display: flex;
+    justify-content: space-around;
+}
+
+.tile6 {
+    background-position: right center;
+}
+
+.tile6::before {
+    content: "6";
+    display: flex;
+    justify-content: space-around;
+}
+
+.tile7 {
+    background-position: left bottom;
+}
+
+.tile7::before {
+    content: "7";
+    display: flex;
+    justify-content: space-around;
+}
+
+.tile8 {
+    background-position: center bottom;
+}
+
+.tile8::before {
+    content: "8";
+    display: flex;
+    justify-content: space-around;
+}
+
+.tile9 {
+    background: white;
+    cursor: default;
+}
+
+.img-wrapper {
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.choice {
+    display: flex;
+}
+
+.circle {
+    background: blue;
+}
+
+.circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+}
+
+.black {
+    background: black;
+}
+
+.green {
+    background: green;
+}
+
+.white {
+    background: white;
+}
+
+.color_pallete {
+    display: flex;
+}

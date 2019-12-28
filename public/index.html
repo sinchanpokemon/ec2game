@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./style.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="timingBox">
+            <p id="level">Round : 0</p>
+            <p id="timer">Time: 00</p>
+            <p id="countdown" style="text-align:right"></p>
+        </div>
+
+
+        <div class="row" id="puzzle_game">
+
+            <div id="table" style="display: table;">
+                <div id="row1" style="display: table-row;">
+                    <div id="cell11" class="tile1" onClick="clickTile(1,1);"></div>
+                    <div id="cell12" class="tile2" onClick="clickTile(1,2);"></div>
+                    <div id="cell13" class="tile3" onClick="clickTile(1,3);"></div>
+                </div>
+                <div id="row2" style="display: table-row;">
+                    <div id="cell21" class="tile4" onClick="clickTile(2,1);"></div>
+                    <div id="cell22" class="tile5" onClick="clickTile(2,2);"></div>
+                    <div id="cell23" class="tile6" onClick="clickTile(2,3);"></div>
+                </div>
+                <div id="row3 " style="display: table-row; ">
+                    <div id="cell31" class="tile7" onClick="clickTile(3,1);"></div>
+                    <div id="cell32" class="tile8" onClick="clickTile(3,2);"></div>
+                    <div id="cell33" class="tile9" onClick="clickTile(3,3);"></div>
+                </div>
+            </div>
+            <button onClick="shuffle();">New Game</button>
+
+            <div id="result" style="text-align: center; "></div>
+        </div>
+        <div class="row ">
+            <button id="toss" style="display: none; ">TOSS</button>
+        </div>
+
+        <div class="row ">
+            <div class="choice" id="choice" style="display: none;">
+                <div class="img-wrapper">
+                    <img src="img/banana.png" alt=" " width="100%" onclick="getvalue('banana')" />
+                    <h4>Price : 20$</h4>
+                </div>
+                <div class="img-wrapper">
+                    <img src="img/mango.jpg" alt=" " width="100%" onclick="getvalue('mango')" />
+                    <h4>Price :30$ </h4>
+                </div>
+
+                <div class="img-wrapper">
+                    <img src="img/orange.png " alt=" " width="100%" value="orange" onclick="getvalue('orange')" />
+                    <h4>Price :50$ </h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="color_pallete ">
+                <div class="circle red " onclick="changecolor( 'red') "></div>
+
+
+                <div class=" circle blue" onclick="changecolor( 'blue') ">
+                </div>
+
+                <div class="circle black" onclick="changecolor( 'black') ">
+                </div>
+
+                <div class="circle green" onclick="changecolor( 'green') ">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row" id="controlpanel">
+        <button id="connect">Connect</button>
+        <button id="leave">Leave</button>
+    </div>
+
+    <div class="final_result ">
+        <h1>Result</h1>
+        <div class="result "></div>
+    </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+    <script src="/socket.io/socket.io.js "></script>
+    <script src="index.js " type="text/JavaScript "></script>
+
+</body>
+
+</html>

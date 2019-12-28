@@ -1,0 +1,104 @@
+/* .tile3,
+.tile4,
+.tile5,
+.tile6,
+.tile7,
+.tile8 {
+    display: table-cell;
+    width: 120px;
+    height: 120px;
+    border: 1px solid white;
+    background-image: url('');
+}
+
+.tile9 {
+    display: table-cell;
+    width: 120px;
+    height: 120px;
+    border: 1px solid white;
+    cursor: pointer;
+} */
+
+.tile1 {
+    background-position: left top;
+}
+
+.tile2 {
+    background-position: center top;
+}
+
+.tile3 {
+    background-position: right top;
+}
+
+.tile4 {
+    background-position: left center;
+}
+
+.tile5 {
+    background-position: center center;
+}
+
+.tile6 {
+    background-position: right center;
+}
+
+.tile7 {
+    background-position: left bottom;
+}
+
+.tile8 {
+    background-position: center bottom;
+}
+
+.img-wrapper {
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.choice {
+    display: flex;
+}
+
+.speudo_color_property {
+    color: red;
+}
+
+.property {
+    display: flex;
+    justify-content: space-around;
+}
+
+.overlay::after {
+    content: "1";
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.red {
+    background: red
+}
+
+.blue {
+    background: blue
+}
+
+.black {
+    background: black;
+}
+
+.green {
+    background: green;
+}
+
+.color_pallete {
+    display: flex;
+}
